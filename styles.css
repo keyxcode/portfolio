@@ -71,17 +71,21 @@ nav > ul {
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
   align-items: center;
 }
 
 .card-img {
   max-width: 75%;
+  height: 100%;
   border-radius: 8px;
-  border: 5px solid var(--light);
+  height: fit-content;
+}
+
+.card-texts {
+  width: 75%;
+  text-align: left;
 }
 
 @media only screen and (min-width: 768px) {
