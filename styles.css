@@ -35,15 +35,17 @@ header {
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: block;
 }
 
 nav > ul {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+}
+
+nav img {
+  max-width: 25px;
 }
 
 .hero-content {
@@ -187,6 +189,11 @@ nav > ul {
   .tech-content {
     width: 50%;
   }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -220,10 +227,14 @@ footer li {
 
 footer img {
   max-width: 100px;
-  filter: invert(100);
-  transition: 0.3s;
 }
 
+a img {
+  filter: invert(100);
+  transition: 0.5s;
+}
+
+header img:hover,
 footer img:hover {
-  filter: invert(0);
+  opacity: 50%;
 }
