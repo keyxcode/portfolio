@@ -74,6 +74,30 @@ nav > ul {
 }
 
 /*=============================================================================*/
+.projects {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 32px 48px 32px;
+  gap: 32px;
+  background-color: var(--lightest);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img {
+  max-width: 75%;
+  border-radius: 8px;
+  border: 5px solid var(--light);
+}
+
+/*=============================================================================*/
 .footer {
   display: flex;
   justify-content: space-between;
@@ -96,21 +120,6 @@ ul {
 .content {
   flex-grow: 1;
   background-color: var(--lightest);
-}
-
-.main-1,
-.main-2,
-.main-3,
-.main-4 {
-  display: flex;
-}
-
-.main-1 {
-  flex-wrap: wrap;
-  background-color: var(--darkest);
-  justify-content: center;
-  padding: 0 0 32px;
-  gap: 16px;
 }
 
 button {
@@ -136,44 +145,6 @@ button {
 }
 
 /*=============================================================================*/
-.main-2 {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 32px 48px 32px;
-  gap: 32px;
-  background-color: var(--lightest);
-}
-
-.info-header {
-  color: var(--darkest);
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.info-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 16px;
-}
-
-.card {
-  flex-basis: 20%;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  justify-content: center;
-  align-items: center;
-}
-
-.card-img {
-  max-width: 100%;
-  border-radius: 8px;
-  border: 5px solid var(--light);
-}
-
-/*=============================================================================*/
 .main-3 {
   justify-content: center;
   align-items: center;
@@ -191,14 +162,7 @@ button {
 
 .quote {
   font-size: 24px;
-  font-style: italic;
   font-weight: 250;
-  color: var(--lightest);
-}
-
-.quoter {
-  font-size: 18px;
-  margin-left: auto;
   color: var(--darkest);
 }
 
