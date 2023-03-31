@@ -64,26 +64,25 @@ nav > ul {
 /*=============================================================================*/
 .projects {
   display: grid;
-  align-items: center;
   padding: 24px;
   gap: 32px;
   background-color: var(--light);
 }
 
-.project {
+.project-header {
   position: relative;
 }
 
-.project:hover img {
+.project-header:hover img {
   filter: brightness(25%);
   transform: scale(1.02);
 }
 
-.project:hover .card-texts {
+.project-header:hover .project-overlay {
   opacity: 1;
 }
 
-.card-img {
+.project-img {
   max-width: 100%;
   border-radius: 8px;
   height: fit-content;
@@ -91,7 +90,7 @@ nav > ul {
   transition: 0.3s;
 }
 
-.card-texts {
+.project-overlay {
   width: 100%;
   height: 100%;
   color: var(--light);
@@ -101,8 +100,22 @@ nav > ul {
   top: 0;
   left: 0;
   display: grid;
-  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  justify-items: center;
+}
+
+.projects ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.projects ul li {
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 8px;
+  border-radius: 4px;
 }
 
 @media only screen and (min-width: 768px) {
