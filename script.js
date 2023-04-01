@@ -7,7 +7,7 @@ let text = "< My Projects />";
 const textArray = [...text];
 
 const blinkingCursor = setInterval(() => {
-  cursor.textContent = cursor.textContent === "|" ? "" : "|";
+  cursor.textContent = cursor.textContent === "|" ? "\u00A0" : "|";
 }, 500);
 
 window.addEventListener("scroll", () => {
