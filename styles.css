@@ -67,6 +67,11 @@ nav img {
   position: relative;
   margin: 0;
 }
+
+#cursor,
+#blinking-text {
+  display: inline-block;
+}
 /*=============================================================================*/
 .projects {
   display: grid;
