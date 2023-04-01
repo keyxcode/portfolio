@@ -183,6 +183,45 @@ nav img {
   color: var(--darkest);
 }
 
+/*=============================================================================*/
+footer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--darkest);
+  color: var(--lightest);
+  padding: 48px;
+}
+
+footer ul {
+  display: grid;
+  align-items: start;
+  flex-wrap: wrap;
+  width: 75%;
+  height: 50%;
+  gap: 16px;
+}
+
+footer li {
+  text-align: center;
+}
+
+footer img {
+  max-width: 50%;
+}
+
+a img {
+  filter: invert(100);
+  transition: 0.5s;
+}
+
+header img:hover,
+footer img:hover {
+  opacity: 50%;
+}
+
 @media only screen and (min-width: 768px) {
   .hero-content,
   .music-content,
@@ -197,44 +236,8 @@ nav img {
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-
-/*=============================================================================*/
-footer {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--darkest);
-  color: var(--lightest);
-  padding: 48px 48px 0;
-}
-
-footer ul {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  flex-wrap: wrap;
-  gap: 50px;
-  width: 75%;
-  height: 50%;
-}
-
-footer li {
-  text-align: center;
-}
-
-footer img {
-  max-width: 100px;
-}
-
-a img {
-  filter: invert(100);
-  transition: 0.5s;
-}
-
-header img:hover,
-footer img:hover {
-  opacity: 50%;
+  footer ul {
+    grid-template-columns: repeat(3, 1fr);
+    width: 50%;
+  }
 }
