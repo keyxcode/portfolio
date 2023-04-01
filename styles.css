@@ -29,7 +29,7 @@ header {
   flex-direction: column;
   background-color: var(--darkest);
   color: var(--light);
-  min-height: 80vh;
+  min-height: 95vh;
   height: fit-content;
   padding: 8px 48px 0;
 }
@@ -69,8 +69,9 @@ nav img {
 }
 
 #cursor,
-#blinking-text {
+#typing-text {
   display: inline-block;
+  font-size: 32px;
 }
 /*=============================================================================*/
 .projects {

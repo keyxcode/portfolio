@@ -1,5 +1,5 @@
 const header = document.querySelector("body");
-const blinkingText = document.querySelector("#blinking-text");
+const typingText = document.querySelector("#typing-text");
 const cursor = document.querySelector("#cursor");
 let scrolled = false;
 
@@ -15,6 +15,6 @@ window.addEventListener("scroll", () => {
   scrolled = true;
   setInterval(() => {
     if (textArray.length === 0) return;
-    blinkingText.textContent += textArray.shift();
+    typingText.textContent += textArray.shift();
   }, 75);
 });
