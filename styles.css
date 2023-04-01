@@ -29,7 +29,7 @@ header {
   flex-direction: column;
   background-color: var(--darkest);
   color: var(--light);
-  min-height: 100vh;
+  min-height: 80vh;
   height: fit-content;
   padding: 8px 48px 0;
 }
@@ -222,6 +222,9 @@ footer img:hover {
 }
 
 @media only screen and (min-width: 768px) {
+  header {
+    min-height: 100vh;
+  }
   .hero-content,
   .music-content,
   .tech-content {
