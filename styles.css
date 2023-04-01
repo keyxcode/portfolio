@@ -114,7 +114,6 @@ nav img {
 .projects a {
   background-color: var(--light);
   color: var(--darkest);
-  font-size: 24px;
   padding: 16px;
   border-radius: 4px;
   transition: 0.3s;
@@ -123,6 +122,10 @@ nav img {
 .projects a:hover {
   background-color: var(--mid);
   color: var(--light);
+}
+
+.projects a:active {
+  background-color: var(--dark);
 }
 
 .projects ul {
@@ -153,17 +156,9 @@ nav img {
 }
 
 /*=============================================================================*/
-.tech {
-  justify-content: center;
-  align-items: center;
-  padding: 32px 48px 32px;
-  background-color: var(--lightest);
-}
-
 .music,
 .tech {
   display: flex;
-  justify-content: end;
   padding: 32px 48px;
   background-color: var(--lightest);
   height: fit-content;
@@ -171,7 +166,6 @@ nav img {
 }
 
 .tech {
-  justify-content: start;
   background-color: (var(--light));
 }
 
@@ -235,6 +229,13 @@ footer img:hover {
   }
   .projects {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .tech {
+    justify-content: start;
+    align-items: center;
+  }
+  .music {
+    justify-content: end;
   }
   footer ul {
     grid-template-columns: repeat(3, 1fr);
