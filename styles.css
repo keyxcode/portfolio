@@ -23,6 +23,11 @@ a {
   text-decoration: none;
 }
 
+#langcorrect,
+#langcorrect:visited {
+  color: var(--mid);
+}
+
 /*=============================================================================*/
 header {
   display: flex;
@@ -145,20 +150,6 @@ nav img {
   color: var(--light);
   padding: 8px;
   border-radius: 4px;
-}
-
-/*=============================================================================*/
-.hero-img-container {
-  flex: 1 1 50%;
-  background-color: var(--darkest);
-  padding: 16px 48px;
-  max-width: 75%;
-  display: flex;
-}
-
-.hero-img {
-  max-width: 100%;
-  border-radius: 8px;
 }
 
 /*=============================================================================*/
