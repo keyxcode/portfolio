@@ -14,23 +14,8 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
 a {
   text-decoration: none;
-}
-
-#langcorrect,
-#langcorrect:visited {
-  color: var(--mid);
-  font-weight: bold;
-}
-
-#langcorrect:hover {
-  text-decoration: underline;
 }
 
 /*=============================================================================*/
@@ -49,6 +34,8 @@ nav {
 }
 
 nav > ul {
+  list-style-type: none;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
@@ -76,6 +63,16 @@ nav img {
   font-weight: bold;
   position: relative;
   margin: 0;
+}
+
+#langcorrect,
+#langcorrect:visited {
+  color: var(--mid);
+  font-weight: bold;
+}
+
+#langcorrect:hover {
+  text-decoration: underline;
 }
 
 #cursor,
@@ -145,6 +142,8 @@ nav img {
 }
 
 .projects ul {
+  list-style-type: none;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -171,6 +170,10 @@ nav img {
   background-color: (var(--light));
 }
 
+.tech > ul {
+  list-style-type: disc;
+}
+
 .music-content,
 .tech-content {
   width: 100%;
@@ -192,6 +195,8 @@ footer {
 }
 
 footer ul {
+  list-style-type: none;
+  padding: 0;
   display: grid;
   align-items: start;
   flex-wrap: wrap;
