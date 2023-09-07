@@ -26,6 +26,11 @@ a {
 #langcorrect,
 #langcorrect:visited {
   color: var(--mid);
+  font-weight: bold;
+}
+
+#langcorrect:hover {
+  text-decoration: underline;
 }
 
 /*=============================================================================*/
