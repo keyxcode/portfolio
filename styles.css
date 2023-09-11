@@ -205,7 +205,7 @@ nav img {
 }
 
 .panel {
-  margin-top: -100%;
+  margin-top: -150%;
   transition: all 0.5s;
   font-size: 1rem;
   color: gray;
