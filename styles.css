@@ -166,25 +166,53 @@ nav img {
   min-height: 50vh;
 }
 
-.education {
-  background-color: (var(--light));
-}
-
-.education > ul {
-  list-style-type: disc;
-}
-
-.education li > p {
-  font-size: 1rem;
-  color: gray;
-}
-
 .personal-content,
 .education-content {
   width: 100%;
   font-size: 20px;
   font-weight: 250;
   color: var(--darkest);
+}
+
+.education {
+  background-color: (var(--light));
+}
+
+.school-name {
+  color: gray;
+}
+
+/*=============================================================================*/
+.accordion {
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+}
+
+.accordion:hover {
+  background-color: var(--light);
+}
+
+.panel-container {
+  overflow: hidden;
+}
+
+.panel {
+  margin-top: -100%;
+  transition: all 0.5s;
+  font-size: 1rem;
+  color: gray;
+}
+
+.visible {
+  margin-top: 0;
 }
 
 /*=============================================================================*/

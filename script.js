@@ -18,3 +18,11 @@ window.addEventListener("scroll", () => {
     typingText.textContent += textArray.shift();
   }, 75);
 });
+
+const accordions = document.querySelectorAll(".accordion");
+accordions.forEach((acc) => {
+  acc.addEventListener("click", () => {
+    const panel = acc.nextElementSibling.firstElementChild;
+    panel.classList.toggle("visible");
+  });
+});
