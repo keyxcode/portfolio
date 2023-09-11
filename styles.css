@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 /*=============================================================================*/
@@ -157,8 +157,8 @@ nav img {
 }
 
 /*=============================================================================*/
-.music,
-.tech {
+.personal,
+.education {
   display: flex;
   padding: 32px 48px;
   background-color: var(--lightest);
@@ -166,18 +166,23 @@ nav img {
   min-height: 50vh;
 }
 
-.tech {
+.education {
   background-color: (var(--light));
 }
 
-.tech > ul {
+.education > ul {
   list-style-type: disc;
 }
 
-.music-content,
-.tech-content {
+.education li > p {
+  font-size: 1rem;
+  color: gray;
+}
+
+.personal-content,
+.education-content {
   width: 100%;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 250;
   color: var(--darkest);
 }
@@ -228,8 +233,8 @@ footer img:hover {
     min-height: 100vh;
   }
   .hero-content,
-  .music-content,
-  .tech-content {
+  .personal-content,
+  .education-content {
     width: 50%;
   }
   nav {
@@ -240,11 +245,11 @@ footer img:hover {
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
-  .tech {
+  .education {
     justify-content: start;
     align-items: center;
   }
-  .music {
+  .personal {
     justify-content: end;
   }
   footer ul {
